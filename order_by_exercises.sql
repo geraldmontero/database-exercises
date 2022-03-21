@@ -1,10 +1,10 @@
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+WHERE first_name IN ('Irena', 'Vidya', 'Maya') ORDER BY first_name , last_name;
 
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE last_name LIKE ('E%');
+WHERE last_name LIKE ('E%') order by emp_no;
 
 SELECT emp_no, first_name, last_name
 FROM employees
