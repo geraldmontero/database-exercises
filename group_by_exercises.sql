@@ -19,7 +19,7 @@ FROM employees
 WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
 
 -- 6
-SELECT last_name, COUNT(last_name)
+SELECT  DISTINCT last_name, COUNT(last_name)
 FROM employees
 WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name;
 
